@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="proyectoLPIISabado">
+		<class>modelo.TblAuto</class>
+		<class>modelo.TblCategoria</class>
+		<class>modelo.TblCliente</class>
+		<class>modelo.TblDocumento</class>
+		<class>modelo.TblEmpleado</class>
+		<class>modelo.TblEmpresa</class>
+		<class>modelo.TblProveedor</class>
+		<class>modelo.TblTipodocumento</class>
+		<class>modelo.TblUsuario</class>
+		
+	<properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bdjpasabado"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="update"/>
+    </properties>
+	</persistence-unit>
+</persistence>
